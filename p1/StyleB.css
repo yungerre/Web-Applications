@@ -1,0 +1,86 @@
+body {
+    font-family: Tahoma;
+    font-size: 40px;
+    display: flex;
+}
+
+div {
+    width: 100px;
+    height: 150px;
+    border-left: 10px dotted #D0D0FF;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#A {
+    background-color: #eeeff2;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#B {
+    background-color: #eeeff2;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#C {
+    background-color: #eeeff2;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#D {
+    background-color: #eeeff2;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#E {
+    background-color: #eeeff2;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#F {
+    background-color: #eeeff2;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#A:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+#B:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+#C:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+#D:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+#E:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+#F:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
