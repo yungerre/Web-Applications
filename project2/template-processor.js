@@ -4,5 +4,6 @@ function TemplateProcessor(template) {
 }
 
 TemplateProcessor.prototype.fillIn = function(dictionary) {
-
+    
+    return this.template;
 }
