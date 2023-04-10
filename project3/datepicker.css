@@ -1,1 +1,55 @@
+.table1 {
+    width: 50%;
+    background: white;
+    color: black;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.table2 {
+    width: 50%;
+    background: white;
+    color: black;
+    table-layout: fixed;
+}
+
+.table3 {
+    width: 50%;
+    background: white;
+    color: black;
+    table-layout: fixed;
+}
+
+.black {
+    text-align: center;
+    color: black;
+}
+
+.gray {
+    text-align: center;
+    color: gray;
+}
+
+.row1 {
+    background: white;
+}
+
+.row3 {
+    background: white;
+}
+
+.table1:hover {
+    color: gray;
+    cursor: pointer;
+}
 
