@@ -1,5 +1,3 @@
-'use strict';
-
 function DatePicker(id, callback) {
     this.id = id;
     this.callback = callback;
@@ -145,7 +143,6 @@ function addAllDates(tableBody3, date, callback, id) {
     }
 
 }
-
 function getNumDays(month, date) {
     if (month < 1) {
         month = 12;
@@ -173,4 +170,39 @@ function createCell(id, date, value, callback) {
     cell.appendChild(value);
     cell.setAttribute("class", "black");
     return cell;
+}
+
+function clickDate(id, date, cell, callback) {
+    date.day = cell.firstChild.textContent;
+    date.year = date.getFullYear();
+    date.month = date.getMonth() + 1;
+    callback.call(this, id, date);
+}
+
+function prevMonth(event, elem, date, months, callback, id) {
+    if (!elem) {
+        console.log("elem is null");
+    }
+    elem.innerHTML = "";
+    if (date.getMonth() >= 1) {
+        date.setMonth(date.getMonth() - 1);
+    } else {
+        date.setYear(date.getFullYear() - 1);
+        date.setMonth(11);
+    }
+    createDateMonth(months, date, elem, callback, id);
+}
+
+function nextMonth(event, elem, date, months, callback, id) {
+    if (!elem) {
+        console.log("elem is null");
+    }
+    elem.innerHTML = "";
+    if (date.getMonth() <= 10) {
+        date.setMonth(date.getMonth() + 1);
+    } else {
+        date.setYear(date.getFullYear() + 1);
+        date.setMonth(0);
+    }
+    createDateMonth(months, date, elem, callback, id);
 }
